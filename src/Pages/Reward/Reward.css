@@ -1,0 +1,170 @@
+
+.reward-container {
+    background: #F5F5F5;
+    justify-content: center;
+    margin-left: 500px;
+    width: 380px;
+    height: 1150px;
+}
+
+.reword-icon-contrainer {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+.point-reward {
+    position: absolute;
+    top: 70px;
+    margin-left: 30px;
+    background: #F5F5F5;
+
+}
+
+
+.point-reward h1 {
+
+    font-family: 'Tatsam Bengali Rnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+
+}
+
+.reward-card-fix {
+    position: absolute;
+    margin-left: 19px;
+    height: 181px;
+    width: 340px;
+    border-radius: 16px;
+    top: 120px;
+    border: 2px solid hsla(206, 75%, 42%, 1);
+    background: linear-gradient(180deg, #1B75BB 0%, #205680 100%);
+
+}
+
+.reward-card-fix h1 {
+    font-family: 'Tatsam Bengali Rnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.reward-card-fix p {
+    font-family: 'Tatsam Bengali Rnd';
+    font-style: normal;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.reword-cart-txt-fix {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+
+}
+
+.reword-cart-txt-fix h1 {
+    font-family: 'Tatsam Bengali Rnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.contrainer-bottom-name {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+
+}
+
+.contrainer-bottom-name h1 {
+
+    font-family: 'Tatsam Bengali Rnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 20px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.list-container h1 {
+    font-family: 'Tatsam Bengali Rnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    color: #2C2C2C;
+
+}
+
+.list-container button {
+    margin: 10px;
+    background: #4C67AD;
+    border-radius: 20px;
+
+}
+
+.list-container p {
+    font-family: 'Tatsam Bengali Rnd';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    text-align: center;
+    color: #2C2C2C;
+
+}
+
+.list-container img {
+    margin: 10px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+
+}
+
+@media screen and (max-width:600px) {
+
+    .reward-container{
+      justify-content:flex-start;
+        margin-right: 500px;
+      
+        
+    }
+
+
+}
