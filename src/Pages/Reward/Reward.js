@@ -35,6 +35,7 @@ const Reward = () => {
     return (
         <div className='reward-container'>
 
+
             <div className='reword-icon-contrainer'>
 
                 <div  >
@@ -255,11 +256,6 @@ const Reward = () => {
                 </Modal>
 
             </div>
-
-
-
-
-
 
 
 

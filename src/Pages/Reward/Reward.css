@@ -1,8 +1,11 @@
 
 .reward-container {
+
     background: #F5F5F5;
+  
     justify-content: center;
-    margin-left: 500px;
+    
+     margin-left: 530px;
     width: 380px;
     height: 1150px;
 }
@@ -157,14 +160,21 @@
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
 
-    .reward-container{
-      justify-content:flex-start;
-        margin-right: 500px;
+   
+        .reward-container {
+    
+            background: #F5F5F5;
+            justify-content: center;
+         
+            width: 380px;
+            height: 1150px;
+        }
+      
+    
       
         
-    }
 
 
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.css';
 import { Button, Carousel, CardGroup, Card, Nav } from 'react-bootstrap';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import { Link } from 'react-router-dom';
 import logo from '../../Images/Person.png';
@@ -15,16 +17,16 @@ import voltage from '../../Images/High Voltage 1.png';
 import footer from '../../Images/Nav.png';
 
 
-
+import { AiFillHome} from "react-icons/ai";
 import { AiOutlineTrophy } from 'react-icons/ai';
 const Home = () => {
 
 
 
     return (
-        <div  className='main-contrainer'>
+        <div className='main-contrainer'>
 
-            
+
             <section className='container'>
 
                 <div className='sub-contrainer'>
@@ -46,7 +48,7 @@ const Home = () => {
 
 
                     <div>
-                    < Nav.Link as={Link} to="reward">
+                        < Nav.Link as={Link} to="reward">
                             <Button variant="hsla(223, 66%, 87%, 1)"> <AiOutlineTrophy />রিওয়ার্ড</Button>{' '}
                         </Nav.Link>
 
@@ -105,10 +107,14 @@ const Home = () => {
 
             <h1 className='card-header'>কুইজ ক্যাটাগরি পছন্দ করুন</h1>
 
+
+
             <div className='card-container'>
 
-                <div>
-                    <CardGroup>
+
+                <Row>
+                    <Col xs={4} md={4}>
+
                         <Card className='card'>
                             <Card.Img variant="top" src={medel} />
                             <Card.Body>
@@ -117,7 +123,9 @@ const Home = () => {
                             </Card.Body>
 
                         </Card>
-                        <Card>
+                    </Col>
+                    <Col xs={4} md={4}>
+                        <Card className='card'>
                             <Card.Img variant="top" src={book} />
                             <Card.Body>
                                 <p>তথ্যমূলক</p>
@@ -125,7 +133,9 @@ const Home = () => {
                             </Card.Body>
 
                         </Card>
-                        <Card>
+                    </Col>
+                    <Col xs={4} md={4}>
+                        <Card className='card'>
                             <Card.Img variant="top" src={gogle} />
                             <Card.Body>
                                 <p>গুগলি</p>
@@ -133,12 +143,11 @@ const Home = () => {
                             </Card.Body>
 
                         </Card>
+                    </Col>
 
-                    </CardGroup>
 
-                </div>
-                <div>
-                    <CardGroup>
+                    <Col xs={4} md={4}>
+
                         <Card className='card'>
                             <Card.Img variant="top" src={globe} />
                             <Card.Body>
@@ -147,15 +156,19 @@ const Home = () => {
                             </Card.Body>
 
                         </Card>
-                        <Card>
+                    </Col>
+                    <Col xs={4} md={4}>
+                        <Card className='card'>
                             <Card.Img variant="top" src={bd} />
                             <Card.Body>
-                                <p> বাংলাদেশ</p>
+                                <p>বাংলাদেশ</p>
 
                             </Card.Body>
 
                         </Card>
-                        <Card>
+                    </Col>
+                    <Col xs={4} md={4}>
+                        <Card className='card'>
                             <Card.Img variant="top" src={voltage} />
                             <Card.Body>
                                 <p>এন্টারটেইন</p>
@@ -163,22 +176,19 @@ const Home = () => {
                             </Card.Body>
 
                         </Card>
-
-                    </CardGroup>
-
-
-
-                </div>
-
-
+                    </Col>
+                </Row>
 
 
             </div>
+
             <div className='footer-contrainer'>
                 <div className='footer'>
-                    <img src={footer} alt="" />
+
+
+                     <img src={footer} alt="" /> 
                 </div>
-            </div>
+            </div> 
 
         </div >
 
