@@ -1,61 +1,64 @@
-.main-contrainer {
-   
-    margin-left: 530px; 
+.main-contrainer>div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0px -10px 24px rgba(15, 13, 35, 0.06);
+}
+
+.parent-div {
+    background: white;
     width: 380px;
-    background: #FFFFFF;
+    height: 780px;
     box-shadow: 0px -10px 24px rgba(15, 13, 35, 0.06);
 
 }
 
-
 .container {
     background-image: url(../../Images/Ellipse\ 83.png);
     background-repeat: no-repeat;
-    
-    width: 600px; 
+
+    width: 380px;
     height: 360px;
 
 }
 
- .header-fixed {
+.header-fixed {
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-} 
+}
 
 .header-img {
-    position: absolute;
-    width: 38px;
-    height: 38px;
+    margin-left: 20px;
+    width: 45px;
+    height: 45px;
     top: 30px;
-    left: 580px; 
     border-radius: 52px;
 }
 
 .header-text h1 {
-
     width: 58px;
     height: 24px;
-    margin-right: 80px;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
     font-family: 'Tatsam Bengali Rnd';
     font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 35px;
     color: #F2F2F2;
 }
 
 .header-text p {
-
     width: 74px;
     height: 24px;
-
+    margin-top: 10px;
+    margin-left: 20px;
     font-family: 'Nunito';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
     line-height: 10px;
     color: #F2F2F2;
@@ -64,15 +67,15 @@
 
 .sub-contrainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 10px;
+
 }
 
 .sub-contrainer button {
-    margin-right: 150px;
-    height: 40px;
-    width: 108px;
+
+    height: 45px;
+    width: 110px;
     background: #C7D3F3;
     border: 4px solid #E9EFFF;
     border-radius: 53px;
@@ -83,7 +86,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 86px;
+    height: 96px;
     width: 340px;
     margin-top: -230px;
     margin-left: 20px;
@@ -135,6 +138,7 @@
     width: 360px;
 
 
+
 }
 
 .card-header {
@@ -145,7 +149,7 @@
     height: 23px;
 
     font-family: 'Tatsam Bengali Rnd';
-    font-style: normal;
+    font-style: bold;
     font-weight: 500;
     font-size: 15px;
     line-height: 23px;
@@ -155,8 +159,8 @@
 
 .card {
 
-    height: 92px;
-    width: 98px;
+    height: 100px;
+    width: 96px;
     margin-left: 15px;
     margin: 10px;
     background: #F2F7FF;
@@ -165,17 +169,17 @@
 }
 
 .card img {
-    height: 38px;
-    width: 38px;
-    margin: 4px;
-    margin-left: 20px;
+    height: 37px;
+    width: 37px;
+    margin: 5px;
+    margin-left: 25px;
 }
 
 .card p {
     font-family: 'Tatsam Bengali Rnd';
-    font-style: normal;
+    font-style: bold;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 20px;
 
     color: #636469;
@@ -186,6 +190,7 @@
 
     width: 380px;
 
+
 }
 
 .footer {
@@ -193,22 +198,9 @@
     justify-content: space-between;
     align-items: center;
 
-    height: 72px;
+    margin: 5px;
+    height: 80px;
     background: #FFFFFF;
     box-shadow: 0px -10px 24px rgba(15, 13, 35, 0.06);
-
-
-}
-
-@media screen and (max-width:768px) {
-    .main-contrainer {
-
-        display: block;
-
-
-
-
-    }
-
 
 }

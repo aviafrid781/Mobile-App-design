@@ -1,10 +1,16 @@
 .reward-container {
-  
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.parent-container {
     background: #F5F5F5;
- 
-     margin-left: 530px; 
     width: 380px;
     height: 1150px;
+
+
 }
 
 .reword-icon-contrainer {
@@ -18,7 +24,7 @@
 .point-reward {
     position: absolute;
     top: 70px;
-    margin-left: 30px;
+    margin-left: 40px;
     background: #F5F5F5;
 
 }
@@ -137,8 +143,8 @@
 .list-container p {
     font-family: 'Tatsam Bengali Rnd';
     font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
+    font-weight: 500;
+    font-size: 11px;
     line-height: 140%;
     text-align: center;
     color: #2C2C2C;
@@ -157,14 +163,3 @@
 
 }
 
-@media screen and (max-width:768px) {
-
-
-    .reward-container {
-
-        display: block;
-
-
-    }
-
-}
