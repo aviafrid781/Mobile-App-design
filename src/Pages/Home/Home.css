@@ -12,8 +12,6 @@
     background-image: url(../../Images/Ellipse\ 83.png);
     background-repeat: no-repeat;
     
-     /* justify-content: center;  */
-
     width: 600px; 
     height: 360px;
 
@@ -32,7 +30,7 @@
     width: 38px;
     height: 38px;
     top: 30px;
-    left: 550px; 
+    left: 580px; 
     border-radius: 52px;
 }
 
