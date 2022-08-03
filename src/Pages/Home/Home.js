@@ -3,7 +3,6 @@ import './Home.css';
 import { Button, Carousel, CardGroup, Card, Nav } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 import { Link } from 'react-router-dom';
 import logo from '../../Images/Person.png';
 import log2 from '../../Images/Vector (3).png';
@@ -15,19 +14,19 @@ import globe from '../../Images/Globe 1.png';
 import bd from '../../Images/bangladesh 1.png';
 import voltage from '../../Images/High Voltage 1.png';
 import footer from '../../Images/Nav.png';
+import { AiFillHome } from "react-icons/ai";
+import { BiTrophy } from "react-icons/bi";
+import { HiOutlineMenu } from "react-icons/hi";
+import { TbPuzzle } from "react-icons/tb";
 
-
-import { AiFillHome} from "react-icons/ai";
 import { AiOutlineTrophy } from 'react-icons/ai';
 const Home = () => {
-
-
-
+    let iconStyles = { color: " hsla(220, 28%, 40%, 1)", fontSize: "2.0em", margin: "10px" };
     return (
         <div className='main-contrainer'>
 
 
-            <section className='container'>
+            <div className='container'>
 
                 <div className='sub-contrainer'>
 
@@ -40,7 +39,9 @@ const Home = () => {
                         </div>
 
                         <div className='header-text'>
+
                             <h1>ইশতিয়াক</h1>
+
                             <p>Level-Warrior</p>
                         </div>
 
@@ -49,17 +50,13 @@ const Home = () => {
 
                     <div>
                         < Nav.Link as={Link} to="reward">
-                            <Button variant="hsla(223, 66%, 87%, 1)"> <AiOutlineTrophy />রিওয়ার্ড</Button>{' '}
+                            <Button variant="hsla(223, 66%, 87%, 1)"> <AiOutlineTrophy style={{fontSize: "1.2em", marginLeft: "3px"}} />রিওয়ার্ড</Button>{' '}
                         </Nav.Link>
-
                     </div>
-
 
                 </div>
 
-            </section>
-
-
+            </div>
 
             <div className='caontainer-point'>
 
@@ -74,6 +71,8 @@ const Home = () => {
 
             </div>
 
+
+            {/* slider show */}
 
             <div className='slider'>
                 <Carousel fade>
@@ -100,10 +99,11 @@ const Home = () => {
                             alt="Third slide"
                         />
 
-
                     </Carousel.Item>
                 </Carousel>
             </div>
+
+            {/* quiz cart show */}
 
             <h1 className='card-header'>কুইজ ক্যাটাগরি পছন্দ করুন</h1>
 
@@ -182,13 +182,19 @@ const Home = () => {
 
             </div>
 
+            {/* footer  */}
+
             <div className='footer-contrainer'>
+
                 <div className='footer'>
 
+                    <AiFillHome style={iconStyles} />
+                    < BiTrophy style={iconStyles} />
+                    <TbPuzzle style={iconStyles} />
+                    < HiOutlineMenu style={iconStyles} />
 
-                     <img src={footer} alt="" /> 
                 </div>
-            </div> 
+            </div>
 
         </div >
 

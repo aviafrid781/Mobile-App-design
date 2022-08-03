@@ -8,7 +8,6 @@ import rewardIcon2 from '../../Images/Reward Icon (1).png';
 import rewardIcon3 from '../../Images/Group 9585.png';
 import arrowicon from '../../Images/Vector (6).png';
 import modal from '../../Images/Group 9580.png';
-
 import { AiOutlineWifi } from "react-icons/ai";
 import { GiNetworkBars } from "react-icons/gi";
 import { BsBatteryFull } from "react-icons/bs";
@@ -20,21 +19,18 @@ import { Button, Card, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Reward.css'
 import Modal from 'react-bootstrap/Modal';
+
 const Reward = () => {
 
     let iconStyles = { color: " #C8B6E2", fontSize: "1.5em", margin: "10px" };
-
+    
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const [smShow, setSmShow] = useState(false);
-    const [lgShow, setLgShow] = useState(false);
-
 
     return (
         <div className='reward-container'>
-
 
             <div className='reword-icon-contrainer'>
 
@@ -54,11 +50,10 @@ const Reward = () => {
                 < Nav.Link as={Link} to="/">
                     <h1> <AiOutlineArrowLeft /> পয়েন্ট রিওয়ার্ড</h1>
                 </Nav.Link>
-
-
             </div>
 
 
+            {/* reword card */}
 
             <div className='reward-card-fix'>
 
@@ -81,11 +76,11 @@ const Reward = () => {
 
                 <div>
 
-
                 </div>
 
-
             </div>
+
+
 
             <div style={{ position: 'absolute', top: '300px', width: '380px' }}  >
 
@@ -102,6 +97,9 @@ const Reward = () => {
 
             </div>
 
+
+
+            {/* first list  */}
 
             <div style={{ position: 'absolute', top: '390px', width: '380px' }}>
 
@@ -121,8 +119,6 @@ const Reward = () => {
 
                 </div>
 
-
-
                 <div className='list-container'>
                     <div>
 
@@ -139,14 +135,9 @@ const Reward = () => {
 
                         <Button onClick={() => setSmShow(true)}>সংগ্রহ করুন </Button>{' '}
 
-
                     </div>
 
                 </div>
-
-
-
-
 
 
                 <div className='list-container'>
@@ -165,9 +156,11 @@ const Reward = () => {
 
                 </div>
 
-
-
             </div>
+
+
+
+            {/* middle lis */}
 
 
             <div>
@@ -196,8 +189,10 @@ const Reward = () => {
 
                 </div>
 
-
             </div>
+
+
+            {/* footer list */}
 
 
             <div>
@@ -212,8 +207,6 @@ const Reward = () => {
                             <FaGreaterThan style={iconStyles} />
                         </div>
                     </div>
-
-
 
                 </div>
 
@@ -232,31 +225,31 @@ const Reward = () => {
 
             </div>
 
+
+
             {/* modal */}
+
             <div style={{ height: '70px', width: '300px' }}>
 
 
-                <Modal show={show} onHide={handleClose} animation={false} 
-               
-                    size="sm"
-                    show ={smShow}
-                    onHide={() => setSmShow(false)}
-                    >
+                <Modal show={show} onHide={handleClose} animation={false}
 
+                    size="sm"
+                    show={smShow}
+                    onHide={() => setSmShow(false)}
+                >
                     <Modal.Header closeButton>
 
-                        <Modal.Title style={{ marginLeft:'20px',  textAlign: 'center' }} > পর্যাপ্ত পয়েন্ট নেই </Modal.Title>
+                        <Modal.Title style={{ marginLeft: '20px', textAlign: 'center' }} > পর্যাপ্ত পয়েন্ট নেই </Modal.Title>
 
                     </Modal.Header>
 
-                    <Modal.Body>  <img style={{marginLeft:'45px'  }} src={modal} alt="" /> </Modal.Body>
-                    <Modal.Body style={{ margin: '10px', textAlign: 'center',fontSize: '14px' }}>রিয়ার্ড সংগ্রহ করার জন্য আপনার পয়েন্ট নেই।  নিয়মিত কুইজাস গেম খেলে পয়েন্ট অর্জন করুন </Modal.Body>
-
+                    <Modal.Body>  <img style={{ marginLeft: '45px' }} src={modal} alt="" /> </Modal.Body>
+                    <Modal.Body style={{ margin: '10px', textAlign: 'center', fontSize: '14px' }}>রিয়ার্ড সংগ্রহ করার জন্য আপনার পয়েন্ট নেই।  নিয়মিত কুইজাস গেম খেলে পয়েন্ট অর্জন করুন </Modal.Body>
 
                 </Modal>
 
             </div>
-
 
 
         </div>

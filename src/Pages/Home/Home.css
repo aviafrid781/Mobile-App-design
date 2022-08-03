@@ -1,9 +1,9 @@
-
 .main-contrainer {
-    background: white;
-    justify-content: center;
-    margin-left: 500px;
+   
+    margin-left: 530px; 
     width: 380px;
+    background: #FFFFFF;
+    box-shadow: 0px -10px 24px rgba(15, 13, 35, 0.06);
 
 }
 
@@ -11,29 +11,28 @@
 .container {
     background-image: url(../../Images/Ellipse\ 83.png);
     background-repeat: no-repeat;
-    justify-content: center;
-    /* margin-left: 500px;  */
-    width: 600px;
+    
+     /* justify-content: center;  */
+
+    width: 600px; 
     height: 360px;
-    /* left: 500px;  */
-    /* background-position: left top; */
+
 }
 
-.header-fixed {
+ .header-fixed {
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-
-}
+} 
 
 .header-img {
     position: absolute;
     width: 38px;
     height: 38px;
     top: 30px;
-    left: 550px;
+    left: 550px; 
     border-radius: 52px;
 }
 
@@ -41,8 +40,8 @@
 
     width: 58px;
     height: 24px;
-    margin-right: 100px;
-    margin-top: 20px;
+    margin-right: 80px;
+    margin-top: 15px;
     font-family: 'Tatsam Bengali Rnd';
     font-style: normal;
     font-weight: 600;
@@ -87,9 +86,9 @@
     justify-content: space-between;
     align-items: center;
     height: 86px;
-    width: 330px;
+    width: 340px;
     margin-top: -230px;
-    margin-left: 18px;
+    margin-left: 20px;
     border-radius: 16px;
     padding: 25px;
     border: 1px solid rgb(234, 241, 234);
@@ -125,20 +124,16 @@
 
 .slider {
 
-    justify-content: center;
-    align-items: center;
+
     margin: 10px;
-    /* margin-left: 523px; */
+
     width: 330px;
     height: 360px;
-
 
 }
 
 .card-container {
-    justify-content: center;
-    align-items: center;
-    /* margin-left: 500px; */
+    margin-left: 4px;
     width: 360px;
 
 
@@ -162,20 +157,20 @@
 
 .card {
 
-    height:70% ;
-    width: 100%;
-    margin: 20px;
-    margin-right: 18px;
+    height: 92px;
+    width: 98px;
+    margin-left: 15px;
+    margin: 10px;
     background: #F2F7FF;
     border-radius: 10px;
 
 }
 
 .card img {
-    height: 40px;
-    width: 40px;
-    margin: 7px;
-    margin-left: 30px;
+    height: 38px;
+    width: 38px;
+    margin: 4px;
+    margin-left: 20px;
 }
 
 .card p {
@@ -190,25 +185,31 @@
 }
 
 .footer-contrainer {
-    justify-content: center;
-    align-items: center;
+
     width: 380px;
 
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    height: 72px;
     background: #FFFFFF;
-    box-shadow: 2px 2px;
+    box-shadow: 0px -10px 24px rgba(15, 13, 35, 0.06);
+
 
 }
 
-@media screen and (max-width:900px) {
-    .main-contrainer{
-      
+@media screen and (max-width:768px) {
+    .main-contrainer {
+
         display: block;
-      
-        
+
+
+
+
     }
 
 
